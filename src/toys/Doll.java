@@ -78,7 +78,7 @@ public class Doll extends Toy{
 
     /**
      * The way a doll is played with the passed amount of time, with
-     * its happiness level increasing by its age until the kite has
+     * its happiness level increasing by its age until the doll has
      * reached or exceeded its max happiness level.
      * Prints out the amount of time played with the type of toy and doll
      * as well as a retired message when/if the doll reaches or exceeds
@@ -102,7 +102,8 @@ public class Doll extends Toy{
      * happiness level of 101, a wear level of 18.0, red hair color,
      * age of six, and spoken catchphrase "Will_you_be_my_friend?" would
      * return
-     * "Toy{PC:200, N:GabbyGabby, H:101, R:true, W:18.0}, Doll{HC:RED, A:6, S:Will_you_be_my_friend?}"
+     *      "Toy{PC:200, N:GabbyGabby, H:101, R:true, W:18.0},
+     *      Doll{HC:RED, A:6, S:Will_you_be_my_friend?}"
      *
      * @return the string described above
      */
