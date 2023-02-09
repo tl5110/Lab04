@@ -26,7 +26,7 @@ public class ActionFigure extends Doll{
      * @param age the action figure's age
      * @param speak the action figure's spoken phrase
      */
-    public ActionFigure(String name, int age, String speak) {
+    protected ActionFigure(String name, int age, String speak) {
         super(code, name, HAIR_COLOR, age, speak);
         code += 1;
         this.energyLevel = MIN_ENERGY_LEVEL;

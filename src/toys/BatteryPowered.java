@@ -54,10 +54,10 @@ public abstract class BatteryPowered extends Toy{
      * @param time number of minutes played with the toy
      */
     public void useBatteries(int time){
-        if(batteryLevel != DEPLETED){
-            batteryLevel -= (time + getNumBatteries());
-        } else {
-            System.out.println("\t DEPLETED:" + this);
+        batteryLevel -= (time + getNumBatteries());
+        if(batteryLevel <= DEPLETED){
+            batteryLevel = DEPLETED;
+            System.out.println("\tDEPLETED:" + this);
             batteryLevel = FULLY_CHARGED;
             System.out.println("\tRECHARGED:" + this);
         }
@@ -77,7 +77,7 @@ public abstract class BatteryPowered extends Toy{
      */
     @Override
     public String toString() {
-        return super.toString() + ", BatteryPowered{BL: " + getBatteryLevel()
-                + ", NB:" + getNumBatteries();
+        return super.toString() + ", BatteryPowered{BL:" + getBatteryLevel()
+                + ", NB:" + getNumBatteries() + "}";
     }
 }
