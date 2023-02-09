@@ -1,7 +1,8 @@
 package toys;
 
 /**
- * A toy implementation that represents the different types of toy kites
+ * Concrete class that inherits from Toy.
+ * Represents different types of kites
  *
  * @author Tiffany Lee
  */

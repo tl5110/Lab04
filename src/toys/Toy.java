@@ -1,7 +1,8 @@
 package toys;
 
 /**
- * Represents all types of toys
+ * Abstract superclass of the toy inheritance hierarchy.
+ * Represents all types of toys.
  *
  * @author Tiffany Lee
  */
