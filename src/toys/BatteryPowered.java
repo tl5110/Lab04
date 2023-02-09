@@ -3,6 +3,8 @@ package toys;
 /**
  * Abstract subclass of Toy.
  * Represents battery powered toys.
+ *
+ * @author Tiffany Lee
  */
 public abstract class BatteryPowered extends Toy{
     /** The battery powered toy's battery level. */
@@ -44,8 +46,8 @@ public abstract class BatteryPowered extends Toy{
     }
 
     /**
-     * When played, the battery level is reduced by
-     * (time + number-of-batteries) until the battery level is capped at
+     * When played, the battery level is reduced by the sum of
+     * [time + number-of-batteries] until the battery level is capped at
      * DEPLETED and then after the battery level is restored to FULLY_CHARGED.
      * When the battery level is capped at DEPLETED a depletion message
      * is displayed and recharged message is displayed after the battery
@@ -64,11 +66,11 @@ public abstract class BatteryPowered extends Toy{
     }
 
     /**
-     * Returns the string representation for an action figure, which
+     * Returns the string representation for a battery powered toy, which
      * contains its product code, name, happiness level, whether it is
      * retired or not, its wear level, battery level, and number of batteries
-     * in the battery powered toy. For example, a retried doll with the
-     * product code 300, name of Herbie, happiness level of 101, a wear
+     * in the battery powered toy. For example, a retired battery powered to
+     * with a product code 300, name of Herbie, happiness level of 101, a wear
      * level of 45.0, battery level of 100, and 4 batteries would return
      *      "Toy{PC:300, N:Herbie, H:101, R:true, W:45.0},
      *      BatteryPowered{BL:100, NB:4}"

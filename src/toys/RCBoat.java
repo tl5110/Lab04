@@ -3,6 +3,8 @@ package toys;
 /**
  * A concrete class that inherits from BatteryPowered.
  * Represents RC boats.
+ *
+ * @author Tiffany Lee
  */
 public class RCBoat extends BatteryPowered{
     /** The RC boat's product code. */
@@ -15,7 +17,7 @@ public class RCBoat extends BatteryPowered{
     final static int SPEED_INCREASE = 5;
 
     /**
-     * Creates a new RC Boat that takes the name and number of batteries.
+     * Creates a new RC Boat that takes the passed name and number of batteries.
      * Additionally, there is a unique product code that starts at 300 and
      * increases by one each time a new one is created. The speed is also
      * set to the STARTING_SPEED.
