@@ -23,6 +23,7 @@ import java.util.Scanner;
  *      and the toys that were played with.
  *
  * @author RIT CS
+ * @author Tiffany Lee
  */
 public class ToyLand {
     /** Seed the random number generator for generating random minutes of play time */
