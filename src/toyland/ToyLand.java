@@ -76,7 +76,7 @@ public class ToyLand {
             for (IToy toy: activeToys) {
                 activeToys.remove(toy);
                 toy.play(getRandomTime());
-                if (!toy.isRetired()) {
+                if(!toy.isRetired()) {
                     activeToys.add(toy);
                     break;
                 } else {
@@ -104,10 +104,11 @@ public class ToyLand {
             System.out.println("\t" + toy.toString());
             totalToys += 1;
             totalHappiness += toy.getHappiness();
+            avgWear += toy.getWear();
         }
         System.out.println("Total toys: " + totalToys);
         System.out.println("Total happiness: " + totalHappiness);
-        System.out.println("Average wear: " + avgWear);
+        System.out.println("Average wear: " + (avgWear/totalToys));
     }
 
     /**

@@ -10,7 +10,7 @@ public class RCBoat extends BatteryPowered{
     /** The RC boat's product code. */
     private static int code = 300;
     /** The RC boat's speed. */
-    private static int speed;
+    private int speed;
     /** The RC boat's starting speed. */
     final static int STARTING_SPEED = 10;
     /** The amount in which the RC boat's speed increases. */
@@ -35,7 +35,7 @@ public class RCBoat extends BatteryPowered{
      * Gets the speed of the RC Boat
      * @return the speed of the RC Boat
      */
-    public static int getSpeed() {
+    public int getSpeed() {
         return speed;
     }
 
