@@ -97,7 +97,7 @@ public abstract class Toy implements IToy{
      * level.
      */
     public void play(int time) {
-        System.out.println("\tPLAYING(" + time + "): " + this);
+        System.out.println("PLAYING(" + time + "): " + this);
         specialPlay(time);
         this.happiness += time;
         if(isRetired()){
