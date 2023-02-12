@@ -79,7 +79,6 @@ public class Kite extends Toy{
      * multiplied by the passed time until the kite has reached or
      * exceeded its max happiness level.
      *
-     *
      * @param time number of minutes played with the toy
      */
     @Override
