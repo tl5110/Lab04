@@ -41,13 +41,16 @@ public interface IToy {
     public void increaseWear(double amount);
 
     /**
+     * Prints out the amount of time played with the type of toy or a
+     * retired message when/if the toy reaches or exceeds its max happiness
+     * level. For example:
+     *      "PLAYING(40): Toy{PC:100, N:Cometa, H:0, R:false, W:0.0}, Kite{C:GREEN, T:DELTA}"
+     *      or
+     *      "RETIRED: Toy{PC:100, N:Cometa, H:101, R:true, W:5.050000000000001}, Kite{C:GREEN, T:DELTA}"
      * A toy is played with the passed amount of time and, no matter
      * the type of toy, its happiness level increases uniformly until
      * the happiness level of the toy has reached or exceeded its
      * max happiness level.
-     * Prints out the amount of time played with the type of toy and a
-     * retired message when/if the toy reaches or exceeds its max happiness
-     * level.
      */
     public void play(int time);
 

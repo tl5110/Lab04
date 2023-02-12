@@ -41,13 +41,15 @@ public class ActionFigure extends Doll{
     }
 
     /**
+     * Prints out the amount of time played with the type of
+     * toy/doll/action figure as well as a retired message when/if
+     * the action figure reaches or exceeds its max happiness level.
+     * For example:
+     *      "He-man kung foo chops with 46 energy!"
      * The way an action figure is played with the passed amount of time,
      * with its energy level being multiplied by the time and increasing
      * by one until the action figure has reached or exceeded its
      * max happiness level.
-     * Prints out the amount of time played with the type of toy, doll,
-     * and action figure as well as a retired message when/if the action
-     * figure reaches or exceeds its max happiness level.
      *
      * @param time number of minutes played with the toy
      */
@@ -67,9 +69,10 @@ public class ActionFigure extends Doll{
      * product code 200, name of He-man, happiness level of 63, a wear level
      * of 60.0, orange hair color, age of thirty, spoken catchphrase
      * "By_the_power_of_Grayskull!", and energy level of 3 would return
+     * the following on one line:
      *      "Toy{PC:200, N:He-man, H:63, R:false, W:60.0},
-     *       Doll{HC:ORANGE, A:30, S:By_the_power_of_Grayskull!},
-     *       ActionFigure{E:3}"
+     *      Doll{HC:ORANGE, A:30, S:By_the_power_of_Grayskull!},
+     *      ActionFigure{E:3}"
      *
      * @return the string described above
      */

@@ -40,10 +40,11 @@ public class RCBoat extends BatteryPowered{
     }
 
     /**
+     * Prints out the name and speed of the RC Boat. For example:
+     *      "BlackPearl races around at 10knots!"
      * The way RC Boat is played with the passed amount of time,
      * with its batteries used for the amount of time, the wear increasing
      * by the current speed, and the speed increasing by the SPEED_INCREASE.
-     * Prints out the name and speed of the RC Boat.
      *
      * @param time number of minutes played with the toy
      */
@@ -62,7 +63,8 @@ public class RCBoat extends BatteryPowered{
      * retired or not, its wear level, battery level, number of batteries,
      * and speed. For example, a non-retried RC Boat with the product code
      * 300, name of BlackPearl, happiness level of 40, a wear level of 10.0,
-     * battery level of 56, 4 batteries, and speed of 15 would return
+     * battery level of 56, 4 batteries, and speed of 15 would return the
+     * following on one line:
      *      "Toy{PC:300, N:BlackPearl, H:40, R:false, W:10.0},
      *      BatteryPowered{BL:56, NB:4}, RCBoat(S:15}"
      *

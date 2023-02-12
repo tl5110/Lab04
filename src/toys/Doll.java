@@ -77,12 +77,13 @@ public class Doll extends Toy{
     }
 
     /**
+     * Prints out the amount of time played with the type of toy and doll
+     * as well as a retired message when/if the doll reaches or exceeds
+     * its max happiness level. For example:
+     *      "GabbyGabby brushes their RED hair and says, "Will_you_be_my_friend?""
      * The way a doll is played with the passed amount of time, with
      * its happiness level increasing by its age until the doll has
      * reached or exceeded its max happiness level.
-     * Prints out the amount of time played with the type of toy and doll
-     * as well as a retired message when/if the doll reaches or exceeds
-     * its max happiness level.
      *
      * @param time number of minutes played with the toy
      */
@@ -101,7 +102,7 @@ public class Doll extends Toy{
      * a retried doll with the product code 200, name of GabbyGabby,
      * happiness level of 101, a wear level of 18.0, red hair color,
      * age of six, and spoken catchphrase "Will_you_be_my_friend?" would
-     * return
+     * return the following on one line:
      *      "Toy{PC:200, N:GabbyGabby, H:101, R:true, W:18.0},
      *      Doll{HC:RED, A:6, S:Will_you_be_my_friend?}"
      *

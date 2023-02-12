@@ -50,8 +50,11 @@ public abstract class BatteryPowered extends Toy{
      * [time + number-of-batteries] until the battery level is capped at
      * DEPLETED and then after the battery level is restored to FULLY_CHARGED.
      * When the battery level is capped at DEPLETED a depletion message
-     * is displayed and recharged message is displayed after the battery
-     * level is restored to FULLY_CHARGED
+     * is displayed. For example:
+     *      DEPLETED:toy-toString
+     * Afterwards a recharged message is displayed after the battery
+     * level is restored to FULLY_CHARGED. For example:
+     *      RECHARGED:toy-toString
      *
      * @param time number of minutes played with the toy
      */
@@ -72,6 +75,7 @@ public abstract class BatteryPowered extends Toy{
      * in the battery powered toy. For example, a retired battery powered to
      * with a product code 300, name of Herbie, happiness level of 101, a wear
      * level of 45.0, battery level of 100, and 4 batteries would return
+     * the following on one line:
      *      "Toy{PC:300, N:Herbie, H:101, R:true, W:45.0},
      *      BatteryPowered{BL:100, NB:4}"
      *

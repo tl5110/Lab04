@@ -68,13 +68,17 @@ public class Kite extends Toy{
     }
 
     /**
+     * Prints out the amount of time played with the type of toy/kite
+     * or a retired message when/if the kite reaches or exceeds
+     * its max happiness level. For example:
+     *      "PLAYING(40): Toy{PC:100, N:Cometa, H:0, R:false, W:0.0}, Kite{C:GREEN, T:DELTA}"
+     *      or
+     *      "RETIRED: Toy{PC:100, N:Cometa, H:101, R:true, W:5.050000000000001}, Kite{C:GREEN, T:DELTA}"
      * The way a kite is played with the passed amount of time, with
      * its happiness level increasing by multiple of WEAR_MULTIPLIER
      * multiplied by the passed time until the kite has reached or
      * exceeded its max happiness level.
-     * Prints out the amount of time played with the type of toy and kite
-     * as well as a retired message when/if the kite reaches or exceeds
-     * its max happiness level.
+     *
      *
      * @param time number of minutes played with the toy
      */
@@ -91,7 +95,7 @@ public class Kite extends Toy{
      * its wear level, color, and type. For example, a non-retried kite
      * with the product code 100, name of Cometa, happiness level of 40,
      * a wear level of 2.0, color green, and type delta would return
-     * "Toy{PC:100, N:Cometa, H:0, R:false, W:0.0}, Kite{C:GREEN, T:DELTA}"
+     *      "Toy{PC:100, N:Cometa, H:0, R:false, W:0.0}, Kite{C:GREEN, T:DELTA}"
      *
      * @return the string described above
      */

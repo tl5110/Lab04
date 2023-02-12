@@ -55,11 +55,15 @@ public class Robot extends BatteryPowered{
 
     /**
      * The way Robot is played with the passed amount of time. If the robot
-     * flies its distance is increase by the product of [time*FLY_SPEED] and
-     * prints out the name and distance traveled by the robot vis FLY_SPEED.
-     * Otherwise, the robot's distance is increased by the product of
-     * [time*RUN_SPEED] and prints out the name and distance traveled by
-     * the robot via RUN_SPEED. The batteries are used for teh amount of time
+     * flies, its distance increases by the product of [time*FLY_SPEED],
+     * prints out the name and distance traveled by the robot via FLY_SPEED,
+     * and its wear increases by FLY_SPEED. For example:
+     *      "Voltron is flying around with total distance: 2675"
+     * If it's not flying, the robot's distance is increased by the product
+     * of [time*RUN_SPEED], prints out the name and distance traveled by the
+     * robot via RUN_SPEED, and increases its wear by RUN_SPEED. For example:
+     *      "Wall-E is running around with total distance: 700"
+     * The batteries are used for the passed amount of time
      * regardless of whether the robot flies or not.
      *
      * @param time number of minutes played with the toy
@@ -87,7 +91,8 @@ public class Robot extends BatteryPowered{
      * whether it flies or not, and distance. For example, a retried
      * Robot with the product code 403, name of IronGiant, happiness level
      * of 73, a wear level of 50.0, battery level of 3, 12 batteries,
-     * ablity to fly, and distance of 1825 would return
+     * ablity to fly, and distance of 1825 would return the following
+     * on one line:
      *      "Toy{PC:403, N:IronGiant, H:73, R:false, W:50.0},
      *      BatteryPowered{BL:3, NB:12}, Robot(F:true, D:1825}"
      *
