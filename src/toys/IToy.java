@@ -10,35 +10,35 @@ public interface IToy {
      * Gets the product code of a toy
      * @return the product code of a toy
      */
-    public int getProductCode();
+    int getProductCode();
 
     /**
      * Gets the name of a toy
      * @return the name of a toy
      */
-    public String getName();
+    String getName();
 
     /**
      * Gets the happiness level of a toy
      * @return the happiness level of a toy
      */
-    public int getHappiness();
+    int getHappiness();
 
     /**
      * Checks if the toy is retired or not; in other words
      * it checks if the toy has reached or exceeded its happiness level
      * @return true if retired, false otherwise
      */
-    public boolean isRetired();
+    boolean isRetired();
 
     /**
      * Gets the wear level of a toy
      * @return the wear level of a toy
      */
-    public double getWear();
+    double getWear();
 
     /** Increases the wear level of a toy by the amount passed in. */
-    public void increaseWear(double amount);
+    void increaseWear(double amount);
 
     /**
      * Prints out the amount of time played with the type of toy or a
@@ -52,6 +52,6 @@ public interface IToy {
      * the happiness level of the toy has reached or exceeded its
      * max happiness level.
      */
-    public void play(int time);
+    void play(int time);
 
 }
