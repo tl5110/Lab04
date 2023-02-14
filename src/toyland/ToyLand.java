@@ -79,11 +79,10 @@ public class ToyLand {
                 toy.play(getRandomTime());
                 if(!toy.isRetired()) {
                     activeToys.add(toy);
-                    break;
                 } else {
                     retiredToys.add(toy);
-                    break;
                 }
+                break;
             }
         }
     }
