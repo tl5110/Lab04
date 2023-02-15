@@ -8,9 +8,9 @@ package toys;
  */
 public abstract class Toy implements IToy{
     /** The toy's product code. */
-    private int productCode;
+    private final int productCode;
     /** The toy's name. */
-    private String name;
+    private final String name;
     /** The toy's happiness level. */
     private int happiness;
     /** The toy's wear level. */

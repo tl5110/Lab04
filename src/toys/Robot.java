@@ -10,7 +10,7 @@ public class Robot extends BatteryPowered{
     /** The robot's product code. */
     private static int code = 400;
     /** Is the robot flying? */
-    private boolean flying;
+    private final boolean flying;
     /** The robot's distance. */
     private int distance;
     /** The robot's flying speed. */

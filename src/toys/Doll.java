@@ -10,11 +10,11 @@ public class Doll extends Toy{
     /** The doll's product code. */
     private static int code = 200;
     /** The doll's hair color. */
-    private Color hairColor;
+    private final Color hairColor;
     /** The doll's age. */
-    private int age;
+    private final int age;
     /** The doll's spoken catchphrase. */
-    private String speak;
+    private final String speak;
 
     /**
      * Creates a new doll with the passed name, hair color, age, and

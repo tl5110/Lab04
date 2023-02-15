@@ -24,9 +24,9 @@ public class Kite extends Toy{
     /** The kite's product code. */
     private static int code = 100;
     /** The kite's color. */
-    private Color color;
+    private final Color color;
     /** The kite's type. */
-    private Type type;
+    private final Type type;
     /**
      * How much a kite's wear level increases with this factor of the
      * time it was played with.

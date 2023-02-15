@@ -10,7 +10,7 @@ public abstract class BatteryPowered extends Toy{
     /** The battery powered toy's battery level. */
     private int batteryLevel;
     /** The number of batteries in the battery powered toy. */
-    private int numBatteries;
+    private final int numBatteries;
     /** The battery powered toy's initial fully charged battery level. */
     final static int FULLY_CHARGED = 100;
     /** The battery powered toy's depleted battery level. */
