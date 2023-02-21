@@ -112,8 +112,8 @@ public class ToyLand {
     }
 
     /**
-     * The main program requires the toy data file be provided.  It then
-     * load the toys, plays with them, and displays some final statistics.
+     * The main program requires the toy data file be provided. It then
+     * loads the toys, plays with them, and displays some final statistics.
      *
      * @param args command line arguments (the filename)
      */
