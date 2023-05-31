@@ -1,2 +1,1 @@
-# Lab04
-Toyland
+# Lab04: Toyland
